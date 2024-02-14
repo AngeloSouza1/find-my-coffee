@@ -1,0 +1,76 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+
+.cafe-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18%;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 1000; /* Para garantir que fique sobre o mapa */
+    transition: left 0.3s ease-in-out; /* Adiciona uma transição suave */
+    font-family: 'Roboto', sans-serif;
+
+  }
+  
+  .cafe-details.closed {
+    left: -10%; /* Fecha o painel à esquerda */
+  }
+  
+  .cafe-details-content {
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    height: calc(100% - 40px); /* Ajusta a altura do conteúdo */
+  }
+  
+  .cafe-details h3 {
+    margin-top: 0;
+  }
+  
+  .cafe-details p {
+    margin-top: 10px;
+  }
+  
+  .cafe-details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  
+.cafe-details h3 {
+  color: red;
+}
+
+.comment-button {
+  background-color: #A0522D; /* Cor café */
+  color: white; /* Texto branco */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.comment-button:hover {
+  background-color: #8B4513; /* Altere a cor ao passar o mouse se desejar */
+}
+.reviews-list {
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-top: 16px;
+}
